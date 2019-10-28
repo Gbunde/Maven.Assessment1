@@ -1,6 +1,5 @@
 package com.zipcodewilmington.assessment1.part2;
 
-import jdk.vm.ci.meta.Value;
 
 /**
  * Created by leon on 2/16/18.
@@ -31,18 +30,19 @@ public class ArrayUtils {
 
 
 
-        for (int i = 0; i < objectArray.length; i++){
-           if (objectArray[i] == objectToRemove){
-               newArr= new Object[objectArray.length-1];
-               for (int index = 0; index < i; index++){
-                   newArr[index] = objectArray[index];
-               }
-               for (int j = i; j <objectArray.length-1; j++){
-                   newArr[j] = objectArray[j + 1];
-               }
-           }
-       }
-        return removeValue();
+//        for (int i = 0; i < objectArray.length; i++){
+//           if (objectArray[i] == objectToRemove){
+//               newArr= new Object[objectArray.length-1];
+//               for (int index = 0; index < i; index++){
+//                   newArr[index] = objectArray[index];
+//               }
+//               for (int j = i; j <objectArray.length-1; j++){
+//                   newArr[j] = objectArray[j + 1];
+//               }
+//           }
+//       }
+//        return removeValue();
+        return null;
     }
 
     /**

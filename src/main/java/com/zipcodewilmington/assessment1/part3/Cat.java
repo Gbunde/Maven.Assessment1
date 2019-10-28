@@ -4,7 +4,8 @@ package com.zipcodewilmington.assessment1.part3;
  * Created by leon on 2/16/18.
  */
 public class Cat extends Pet {
-
+    private String name;
+    private Integer age;
 
 
     /**
@@ -22,7 +23,7 @@ public class Cat extends Pet {
      */
     public Cat(Integer age) {
         this.age = age;
-
+        this.name = "Cat name";
     }
 
     /**
@@ -46,7 +47,6 @@ public class Cat extends Pet {
      * @return meow as a string
      */
     public String speak() {
-        System.out.println("meow");
-
+        return "meow";
     }
 }

@@ -20,7 +20,7 @@ public class MultiplesDeleter {
      * @return all ints which are divisible by 2
      * given an array of integers, named `ints` return an identical array with odds removed
      */
-    public Integer[] deleteOdds(Integer[] ints) {
+    public Integer[] deleteOdds(Integer[] ints) { return null; }
 
 
         /**
@@ -38,8 +38,7 @@ public class MultiplesDeleter {
          * @return all ints which are not divisible by the `multiple` specified
          * given an array of integers, named `ints` return an identical array with numbers indivisible by `multiple` removed
          */
-        public Integer[] deleteMultiplesOfN (Integer[]ints,int multiple){
+        public Integer[] deleteMultiplesOfN(Integer[] ints, int multiple){
             return null;
         }
     }
-}
