@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment1.part2;
 
+import jdk.vm.ci.meta.Value;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -11,17 +13,36 @@ public class ArrayUtils {
      * Given an array of objects, named `objectArray`, and an object `objectToCount`, return the number of times the `objectToCount` appears in the `objectArray`
      */
     public static Integer getNumberOfOccurrences(Object[] objectArray, Object objectToCount) {
-        return null;
+        int n = objectArray.length;
+                int count = 0;
+                for (int i = 0; i <n; i++){
+                    if (objectArray[i] == objectToCount){
+                        count++;
+                    }
+                }
+                return count;
     }
 
     /**
-     * @param objectArray    an array of any type of Object
-     * @param objectToRemove a value to be removed from the `objectArray`
      * @return an array with identical content excluding the specified `objectToRemove`
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
-    public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
-        return null;
+    public static Object[] removeValue() {
+
+
+
+        for (int i = 0; i < objectArray.length; i++){
+           if (objectArray[i] == objectToRemove){
+               newArr= new Object[objectArray.length-1];
+               for (int index = 0; index < i; index++){
+                   newArr[index] = objectArray[index];
+               }
+               for (int j = i; j <objectArray.length-1; j++){
+                   newArr[j] = objectArray[j + 1];
+               }
+           }
+       }
+        return removeValue();
     }
 
     /**
